@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightblue;
+}
+
+#game-area {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+#stick {
+    width: 20px;
+    height: 100px;
+    background-color: brown;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.fly {
+    position: absolute;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+#score, #timer {
+    position: absolute;
+    top: 10px;
+    font-size: 20px;
+}
+
+#score {
+    left: 10px;
+}
+
+#timer {
+    right: 10px;
+}
